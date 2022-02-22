@@ -1,0 +1,97 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;    
+}
+
+/* THE WHOLE AREA OF THE GAME */
+
+.game-area {
+    width: 270px;
+    height: 240px;
+    background-color: lightblue;
+
+    display: grid;
+    align-content: start;
+    grid-template-rows: 210px 30px;
+}
+
+
+/* THE GAME BOARD AND CELLS WITHIN IT */
+
+.board {
+    width: 270px;
+    height: 210px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 70px 70px 70px;
+    align-content: center;
+}
+
+.cell {
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
+    box-sizing: border-box;
+
+    display: grid;
+}
+
+.cell1,
+.cell2,
+.cell3 {
+    border-top: none;
+}
+
+.cell3,
+.cell6,
+.cell9 {
+    border-right: none;
+}
+
+.cell7,
+.cell8,
+.cell9 {
+    /*border-bottom: none;*/
+}
+
+.cell1,
+.cell4,
+.cell7 {
+    border-left: none;
+}
+
+.cell div {
+    justify-self: center;
+    align-self: center;
+    font-size: 4rem;
+}
+
+/* THE MENU AREA */
+
+.menu-area {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    align-items: center;
+    justify-items: center;
+}
+
+.menu-area button {
+    height: 80%;
+    width: 80%;
+}
+
+
+
+
